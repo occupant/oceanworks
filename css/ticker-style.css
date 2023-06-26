@@ -1,0 +1,132 @@
+/* Ticker Styling */
+.ticker-wrapper.has-js {
+	width: 980px;
+	display: block;
+	padding-top:5px;
+	height:35px;
+}
+.ticker {
+	width: 900px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	height:30px;
+}
+.ticker-title {
+	padding-top: 9px;
+	color: #333333;
+	font-size:1.4em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.ticker-content {
+	margin: 0px;
+	padding-top: 9px;
+	height:20px;
+	position: absolute;
+	color: #333333;
+	font-size:1.4em;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.ticker-content:focus {
+	none;
+}
+.ticker-content a {
+	text-decoration: none;	
+	color: #333;
+}
+.ticker-content a:hover {
+	text-decoration: underline;	
+	color: #0D3059;
+}
+.ticker-swipe {
+	padding-top: 9px;
+	position: absolute;
+	top: 0px;
+	display: block;
+	background-color:#d8d8d8;
+	width: 800px;
+	height: 23px; 
+}
+.ticker-swipe span {
+	margin-left: 1px;
+	border-bottom: 1px solid #1F527B;
+	background-color:#d8d8d8;
+	height: 12px;
+	width: 7px;
+	display: block;
+}
+.ticker-controls {
+	padding: 8px 0px 0px 0px;
+	list-style-type: none;
+	float: left;
+}
+.ticker-controls li {
+	padding: 0px;
+	margin-left: 5px;
+	float: left;
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	display: block;
+}
+.ticker-controls li.jnt-play-pause {
+	background-image: url('../images/controls.png');
+	background-position: 32px 16px;
+	display:none;
+}
+.ticker-controls li.jnt-play-pause.over {
+	background-position: 32px 32px;
+}
+.ticker-controls li.jnt-play-pause.down {
+	background-position: 32px 0px;
+}
+.ticker-controls li.jnt-play-pause.paused {
+	background-image: url('../images/controls.png');	
+}
+.ticker-controls li.jnt-play-pause.paused.over {
+}
+.ticker-controls li.jnt-play-pause.paused.down {
+}
+.ticker-controls li.jnt-prev {
+	background-image: url('../images/ticker-prev.png');
+	background-repeat:no-repeat;
+}
+.ticker-controls li.jnt-prev.over {	
+}
+.ticker-controls li.jnt-prev.down {	
+}
+.ticker-controls li.jnt-next {
+	background-image: url('../images/ticker-next.png');	
+	background-repeat:no-repeat
+}
+.ticker-controls li.jnt-next.over {
+}
+.ticker-controls li.jnt-next.down {	
+}
+.js-hidden {
+	display: none;
+}
+.no-js-news {
+	padding: 10px 0px 0px 45px; 
+	color: #F8F0DB;
+}
+.left .ticker-swipe {
+	/*left: 80px;*/
+}
+.left .ticker-controls, .left .ticker-content, .left .ticker-title, .left .ticker {
+    float: left;
+}
+.left .ticker-controls {
+    padding-left: 6px;
+}
+.right .ticker-swipe {
+	/*right: 80px;*/
+}
+.right .ticker-controls, .right .ticker-content, .right .ticker-title, .right .ticker {
+    float: right;
+}
+.right .ticker-controls {
+    padding-right: 6px;
+}
